@@ -29,8 +29,17 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	
+	@RequestMapping(value="/")
 	public String home(Locale locale, Model model) throws Exception{
+
+		logger.info("home");
+		
+		return "index";
+	}
+	
+	@RequestMapping("/cosbox/member/memberList.do")
+	public String memberList(Locale locale, Model model) throws Exception{
 
 		logger.info("home");
 		

@@ -48,7 +48,12 @@
         destroy-method="clearCache">
         <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
     </bean>
-
+    
+	<!-- member -->
 	<context:component-scan base-package="cosbox.member.dao"></context:component-scan>
 	<context:component-scan base-package="cosbox.member.service"></context:component-scan>
+	
+	<!-- item -->
+	<context:component-scan base-package="cosbox.item.dao"></context:component-scan>
+	<context:component-scan base-package="cosbox.item.service"></context:component-scan>
 </beans>
